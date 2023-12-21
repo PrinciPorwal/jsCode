@@ -1,24 +1,27 @@
-//  Primitive
+// based on how data store & access in memory
+//1.  Primitive
 
-//  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
+//  7 types : String, Number, Boolean, null, undefined, Symbol, BigInt
 
-const score = 100
-const scoreValue = 100.3
+const score = 100//number
+const scoreValue = 100.3//number
 
-const isLoggedIn = false
-const outsideTemp = null
+const isLoggedIn = false//boolean
+const outsideTemp = null//object
+
 let userEmail;
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
+console.log(typeof id);
 
-console.log(id === anotherId);
+console.log(id === anotherId);//false//as symbol returns unique value
 
 // const bigNumber = 3456543576654356754n
 
 
 
-// Reference (Non primitive)
+//2. Reference (Non primitive)
 
 // Array, Objects, Functions
 
@@ -35,3 +38,17 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+//STACK(PRIMITIVE),HEAP(NON-PRIMITIVE)
+let name="princi";
+let surname="Porwal";
+surname="Gupta";
+console.log(name);
+console.log(surname);//stack
+let obj={
+    name:"princi",
+    email:"principorwal@fj"
+}
+console.log(obj.name);
+let obj2=obj;
+obj2.name="Shiksha";
+console.log(obj.name);//heap

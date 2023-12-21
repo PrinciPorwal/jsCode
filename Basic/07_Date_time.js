@@ -1,10 +1,10 @@
 // Dates
 
 let myDate = new Date()
-// console.log(myDate.toString());
-// console.log(myDate.toDateString());
-// console.log(myDate.toLocaleString());
-// console.log(typeof myDate);
+console.log(myDate.toString());
+console.log(myDate.toDateString());
+console.log(myDate.toLocaleString());
+console.log(typeof myDate);
 
 // let myCreatedDate = new Date(2023, 0, 23)
 // let myCreatedDate = new Date(2023, 0, 23, 5, 3)
@@ -12,11 +12,11 @@ let myDate = new Date()
 let myCreatedDate = new Date("01-14-2023")
 // console.log(myCreatedDate.toLocaleString());
 
-let myTimeStamp = Date.now()
+let myTimeStamp = Date.now()//give time in milisecond
 
 // console.log(myTimeStamp);
-// console.log(myCreatedDate.getTime());
-// console.log(Math.floor(Date.now()/1000));
+// console.log(myCreatedDate.getTime());//give time in milisecond
+// console.log(Math.floor(Date.now()/1000));//give time in second
 
 let newDate = new Date()
 console.log(newDate);
